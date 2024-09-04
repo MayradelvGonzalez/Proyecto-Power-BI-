@@ -1,0 +1,1743 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"dataset1\",\"EstadoMental\",\"Frecuencia\",\"generoMusical\",\"sesion3\",\"usuario2 (2)\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "es-MX",
+    "cultures": [
+      {
+        "name": "es-MX",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_4df0edac-4348-469c-9122-6cc2cf5ca681",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "usuario_id(FK)",
+        "fromTable": "sesion3",
+        "toColumn": "usuario_id(FK)",
+        "toTable": "Frecuencia"
+      },
+      {
+        "name": "AutoDetected_4b91a1b4-0774-4042-82d5-30b9916931dc",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "usuario_id(PK)",
+        "fromTable": "usuario2 (2)",
+        "toColumn": "usuario_id(FK)",
+        "toTable": "Frecuencia"
+      },
+      {
+        "name": "88c95354-51e4-4df1-7cb0-4db7cd985af6",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "estado_metal_id",
+        "fromTable": "EstadoMental",
+        "toColumn": "usuario_id(PK)",
+        "toTable": "usuario2 (2)"
+      },
+      {
+        "name": "001711f6-debb-4e3f-a418-b0cc18f92da7",
+        "fromColumn": "Date",
+        "fromTable": "Calendario",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_fcb7808a-4f8b-4cf0-a4cf-72f8e8c5593d"
+      },
+      {
+        "name": "82e16c9f-a77b-3751-559b-b1b333f7714b",
+        "crossFilteringBehavior": "bothDirections",
+        "fromColumn": "genero_id(FK)",
+        "fromTable": "Frecuencia",
+        "toColumn": "genero_id(PK)",
+        "toTable": "generoMusical"
+      },
+      {
+        "name": "109d9b48-3eca-5315-9041-94e15c71e8e5",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "estado_metal_id",
+        "fromTable": "EstadoMental",
+        "isActive": false,
+        "toColumn": "sesion_id(PK)",
+        "toTable": "sesion3"
+      }
+    ],
+    "sourceQueryCulture": "es-AR",
+    "tables": [
+      {
+        "name": "dataset1",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0988d52e-008c-48f1-a3fa-1e0065f00b3f",
+            "sourceColumn": "Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Primary streaming service",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35018846-f9fb-4fc5-a94e-61d946ca85e6",
+            "sourceColumn": "Primary streaming service",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hours per day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c7e46f7e-721d-44c1-b138-8a5f7522a627",
+            "sourceColumn": "Hours per day",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "While working",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a33b84d9-6051-4a77-8427-6c6f08375dba",
+            "sourceColumn": "While working",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fav genre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d011d511-cad7-4003-93a6-744362af8b33",
+            "sourceColumn": "Fav genre",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Classical]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df08be36-cb3c-4653-a27e-0fbc825eb13f",
+            "sourceColumn": "Frequency [Classical]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Country]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d4d09572-e426-4ab0-91f3-b631796549cd",
+            "sourceColumn": "Frequency [Country]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [EDM]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "48720d44-2d49-4c91-b180-2d7ad084d1ac",
+            "sourceColumn": "Frequency [EDM]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Folk]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4032272d-633e-43e2-ba71-7cecc67dcf87",
+            "sourceColumn": "Frequency [Folk]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Gospel]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4ecdd446-5adc-41d3-a2f5-55da83278cff",
+            "sourceColumn": "Frequency [Gospel]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Hip hop]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ded7e5f9-31cb-4bd8-99b7-7c9d34f30cf8",
+            "sourceColumn": "Frequency [Hip hop]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Jazz]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0f00600a-ffc9-4a34-a669-f4a0551518cd",
+            "sourceColumn": "Frequency [Jazz]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [K pop]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b3fa99db-f7d1-424a-919e-169c931788d4",
+            "sourceColumn": "Frequency [K pop]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Latin]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4c911473-af8f-40b8-a59d-f7c01fc9cc53",
+            "sourceColumn": "Frequency [Latin]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Lofi]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e15b4155-466b-4079-a2e9-2650c2cbc317",
+            "sourceColumn": "Frequency [Lofi]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Metal]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6b9dd2b4-898f-4f8d-a4c5-658ab6aa6b3c",
+            "sourceColumn": "Frequency [Metal]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Pop]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "887803b1-db7d-47a6-9af4-52086b20cf46",
+            "sourceColumn": "Frequency [Pop]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [R&B]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c038d2fb-442f-4cfe-861c-f4bbf0b9fab2",
+            "sourceColumn": "Frequency [R&B]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Rap]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5696defe-b76d-4a43-b096-be1dfc9a9714",
+            "sourceColumn": "Frequency [Rap]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Rock]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a42466b7-6fe2-4a6a-8b9f-4c95d1c88ace",
+            "sourceColumn": "Frequency [Rock]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Video game music]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "123724aa-4334-40a6-bcfc-5a45b59993b5",
+            "sourceColumn": "Frequency [Video game music]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Anxiety",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ea8b697e-1965-420c-9dc5-66493a332954",
+            "sourceColumn": "Anxiety",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Depression",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a4086af-080c-45cf-a3dc-d452bb6e9250",
+            "sourceColumn": "Depression",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Insomnia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9b960700-39aa-48cf-8af0-43d5249b22ae",
+            "sourceColumn": "Insomnia",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "OCD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "92a61a25-0101-4147-aa7d-4f526909e1f7",
+            "sourceColumn": "OCD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Music effects",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "59ba75a6-0402-4d0b-806f-1ea82aa6cde8",
+            "sourceColumn": "Music effects",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "5d3ccf74-638c-4c75-9743-fbb310964d88",
+        "partitions": [
+          {
+            "name": "dataset1",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\mayra\\OneDrive\\Escritorio\\DataAnlytics\\Proeycto final data\\Música y salud mental - nuevo.xlsx\"), null, true),",
+                "    dataset_Table = Origen{[Item=\"dataset\",Kind=\"Table\"]}[Data],",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(dataset_Table,{{\"Age\", Int64.Type}, {\"Primary streaming service\", type text}, {\"Hours per day\", Int64.Type}, {\"While working\", type text}, {\"Fav genre\", type text}, {\"Frequency [Classical]\", type text}, {\"Frequency [Country]\", type text}, {\"Frequency [EDM]\", type text}, {\"Frequency [Folk]\", type text}, {\"Frequency [Gospel]\", type text}, {\"Frequency [Hip hop]\", type text}, {\"Frequency [Jazz]\", type text}, {\"Frequency [K pop]\", type text}, {\"Frequency [Latin]\", type text}, {\"Frequency [Lofi]\", type text}, {\"Frequency [Metal]\", type text}, {\"Frequency [Pop]\", type text}, {\"Frequency [R&B]\", type text}, {\"Frequency [Rap]\", type text}, {\"Frequency [Rock]\", type text}, {\"Frequency [Video game music]\", type text}, {\"Anxiety\", Int64.Type}, {\"Depression\", Int64.Type}, {\"Insomnia\", Int64.Type}, {\"OCD\", Int64.Type}, {\"Music effects\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_c26a4fc9-e8b7-4d25-88a0-e54811b4ca6b",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d56eaa0c-ecbf-40b8-9ad7-c162b9e9e079",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a5fea533-d0e3-42cd-89cb-fea93fe2c781",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "772bc0d8-42a0-4de5-956a-0256063dd297",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "bc12fbb3-60de-414f-836e-44cc65fa4ec7",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "a7baf85f-78dd-4d1a-948c-8de2ee17ca7b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "a7d37cf5-0d6f-4bcb-91c3-a11f3ec7bed5",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "5c493312-955c-4eea-bd99-74ab684011ea",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "ed26d8d5-ee55-4bdf-8903-c794fc28ce52",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "1383c395-fe2e-42bb-9b10-2576ebf31003",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "d8a5d080-ebfd-4ef2-8f89-e4290e00713f",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "15e47691-f468-420b-8090-64acc262a506",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "2c5dc0a6-4be0-4e14-b9f4-994cd70eecd6"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "4589f7bf-956d-47cd-a178-0fd65777d7b0",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_c26a4fc9-e8b7-4d25-88a0-e54811b4ca6b",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "EstadoMental",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "estado_metal_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9449c2a6-c38c-405f-8abf-263ff4590b21",
+            "sourceColumn": "estado_metal_id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Anxiety",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d4ceaed9-d79e-4ae1-873c-6cbb123adbde",
+            "sourceColumn": "Anxiety",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Depression",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "570757ce-8419-441c-aa49-f04ba24936ba",
+            "sourceColumn": "Depression",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Insomnia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "062399a3-2d96-47c3-9b08-32ecd9a3d424",
+            "sourceColumn": "Insomnia",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "OCD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "68658532-f240-433d-a62c-4ced1546b8e1",
+            "sourceColumn": "OCD",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "8e324318-40b0-4360-8d44-39dc5b2e8722",
+        "partitions": [
+          {
+            "name": "EstadoMental",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\mayra\\OneDrive\\Escritorio\\DataAnlytics\\Proeycto final data\\Música y salud mental - nuevo.xlsx\"), null, true),",
+                "    EstadoMental_Table = Origen{[Item=\"EstadoMental\",Kind=\"Table\"]}[Data],",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(EstadoMental_Table,{{\"estado_metal_id\", Int64.Type}, {\"Anxiety\", Int64.Type}, {\"Depression\", Int64.Type}, {\"Insomnia\", Int64.Type}, {\"OCD\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Frecuencia",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "usuario_id(FK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7934b03f-fc75-40a6-a8a9-61b40fdeee8b",
+            "sourceColumn": "usuario_id(FK)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "genero_id(FK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "95137130-ae30-4ea2-b93a-71bbce576c35",
+            "sourceColumn": "genero_id(FK)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "clave_compuesta_id(PK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f1ea3eeb-289d-43f7-b116-ff9034a5b3b4",
+            "sourceColumn": "clave_compuesta_id(PK)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Classical]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "da2b63e9-5f3e-4616-9ed1-a1abb54ca965",
+            "sourceColumn": "Frequency [Classical]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Country]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7cff641c-6cfd-49c8-90ab-80ad3a7a1c88",
+            "sourceColumn": "Frequency [Country]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [EDM]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f16bbb61-f261-4600-ba59-6e3cdad1aaa6",
+            "sourceColumn": "Frequency [EDM]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Folk]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e8fb04bb-5931-485f-8212-3aca20ee635e",
+            "sourceColumn": "Frequency [Folk]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Gospel]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d395a5b4-a14e-4401-ba96-d1d49d750602",
+            "sourceColumn": "Frequency [Gospel]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Hip hop]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4de50b8d-d3fd-44a5-a421-3dc62442e2de",
+            "sourceColumn": "Frequency [Hip hop]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Jazz]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "32fc0f61-2566-4d98-8c87-91b93b82400f",
+            "sourceColumn": "Frequency [Jazz]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [K pop]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d4e7ccd2-b7d1-4237-a4c6-0b944c5769af",
+            "sourceColumn": "Frequency [K pop]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Latin]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6141a17e-ee9c-46b2-ad8a-7a42276c0b9a",
+            "sourceColumn": "Frequency [Latin]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Lofi]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a757fc23-c083-465e-a3a5-1b3d59e42665",
+            "sourceColumn": "Frequency [Lofi]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Metal]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "695bd958-9ea1-444a-982b-be98f860e71d",
+            "sourceColumn": "Frequency [Metal]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Pop]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0d710e58-0247-4747-85cf-61c64cb914ed",
+            "sourceColumn": "Frequency [Pop]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [R&B]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6267a5f9-3b3b-42a7-bb8c-adac7ce06e6d",
+            "sourceColumn": "Frequency [R&B]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Rap]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "def24f20-5f98-4c7b-96bb-9b5d04feca92",
+            "sourceColumn": "Frequency [Rap]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Rock]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "93cccd85-d791-4204-a01e-9f2b835a32e5",
+            "sourceColumn": "Frequency [Rock]",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency [Video game music]",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d4a770df-93ce-4c29-87d7-7bd6c7a6dab5",
+            "sourceColumn": "Frequency [Video game music]",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "511c3356-4559-4095-bff2-5ecdf0ace580",
+        "partitions": [
+          {
+            "name": "Frecuencia",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\mayra\\OneDrive\\Escritorio\\DataAnlytics\\Proeycto final data\\Música y salud mental - nuevo.xlsx\"), null, true),",
+                "    Frecuencia_Table = Origen{[Item=\"Frecuencia\",Kind=\"Table\"]}[Data],",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(Frecuencia_Table,{{\"usuario_id(FK)\", Int64.Type}, {\"genero_id(FK)\", Int64.Type}, {\"clave_compuesta_id(PK)\", type text}, {\"Frequency [Classical]\", type text}, {\"Frequency [Country]\", type text}, {\"Frequency [EDM]\", type text}, {\"Frequency [Folk]\", type text}, {\"Frequency [Gospel]\", type text}, {\"Frequency [Hip hop]\", type text}, {\"Frequency [Jazz]\", type text}, {\"Frequency [K pop]\", type text}, {\"Frequency [Latin]\", type text}, {\"Frequency [Lofi]\", type text}, {\"Frequency [Metal]\", type text}, {\"Frequency [Pop]\", type text}, {\"Frequency [R&B]\", type text}, {\"Frequency [Rap]\", type text}, {\"Frequency [Rock]\", type text}, {\"Frequency [Video game music]\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "generoMusical",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "genero_id(PK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e747f686-2cc0-4aa7-9512-acae6f9b2c1f",
+            "sourceColumn": "genero_id(PK)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "genre_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "032e53da-b72b-413e-aabb-c15ed189f547",
+            "sourceColumn": "genre_name",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "a3a8d2bd-6493-4731-9913-7101f357e615",
+        "partitions": [
+          {
+            "name": "generoMusical",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\mayra\\OneDrive\\Escritorio\\DataAnlytics\\Proeycto final data\\Música y salud mental - nuevo.xlsx\"), null, true),",
+                "    generoMusical_Table = Origen{[Item=\"generoMusical\",Kind=\"Table\"]}[Data],",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(generoMusical_Table,{{\"genero_id(PK)\", Int64.Type}, {\"genre_name\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "sesion3",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "sesion_id(PK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a3c6ebce-3c4a-45dc-89bb-13c549ec938f",
+            "sourceColumn": "sesion_id(PK)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fav_genre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8f35a309-9375-4ab3-9f76-b02b19b352bd",
+            "sourceColumn": "fav_genre",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "music_effect",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "140afee4-14b7-4add-b6c2-9f41852cd9d6",
+            "sourceColumn": "music_effect",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "usuario_id(FK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cb4d8f1c-ef61-4153-b568-49782a2a4d82",
+            "sourceColumn": "usuario_id(FK)",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8e8b2e35-7068-4f9e-8061-4fed530c711b",
+        "partitions": [
+          {
+            "name": "sesion3",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\mayra\\OneDrive\\Escritorio\\DataAnlytics\\Proeycto final data\\Música y salud mental - nuevo.xlsx\"), null, true),",
+                "    sesion_DefinedName = Origen{[Item=\"sesion\",Kind=\"DefinedName\"]}[Data],",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(sesion_DefinedName, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"sesion_id(PK)\", Int64.Type}, {\"fav_genre\", type text}, {\"music_effect\", type text}, {\"usuario_id(FK)\", Int64.Type}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "usuario2 (2)",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "usuario_id(PK)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6cbf8583-ea34-4902-a60a-f31db4542706",
+            "sourceColumn": "usuario_id(PK)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "960b0ef5-c910-46fc-90b5-60de6f0d3f50",
+            "sourceColumn": "Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Primary streaming service",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16818e53-ec07-4050-aa5a-c9ba42f1bef7",
+            "sourceColumn": "Primary streaming service",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hours per day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2b1b9d19-c9cd-411f-9a99-2e0f4069dfee",
+            "sourceColumn": "Hours per day",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "While working",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "88ebf1de-248f-4f80-beb3-713761ce84aa",
+            "sourceColumn": "While working",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fav_genre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cff74837-831b-472b-ad8a-8daf1a7809b3",
+            "sourceColumn": "fav_genre",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Timestamp",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "48f21cdd-1bfc-47d3-88bb-dcda0e4116a1",
+            "sourceColumn": "Timestamp",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "edad_streamingService",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "CONCATENATE('usuario2 (2)'[Age], 'usuario2 (2)'[Primary streaming service])",
+            "isDataTypeInferred": true,
+            "lineageTag": "82448d0f-e49e-439f-91ce-39ae5a787702",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "3b564272-5cb6-44ba-961a-44fda3260b62",
+        "partitions": [
+          {
+            "name": "usuario2 (2)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Excel.Workbook(File.Contents(\"C:\\Users\\mayra\\OneDrive\\Escritorio\\DataAnlytics\\Proeycto final data\\Música y salud mental - nuevo.xlsx\"), null, true),",
+                "    usuario_Table = Origen{[Item=\"usuario\",Kind=\"Table\"]}[Data],",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(usuario_Table,{{\"usuario_id(PK)\", Int64.Type}, {\"Age\", Int64.Type}, {\"Primary streaming service\", type text}, {\"Hours per day\", Int64.Type}, {\"While working\", type text}, {\"fav_genre\", type text}, {\"Timestamp\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Calendario",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "def7e0fde4264f9e8d4783053d7f1024"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "d61c04d2-f364-4ede-8b0a-ce2df41e3791",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn",
+            "variations": [
+              {
+                "name": "Variación",
+                "defaultHierarchy": {
+                  "hierarchy": "Jerarquía de fechas",
+                  "table": "LocalDateTable_fcb7808a-4f8b-4cf0-a4cf-72f8e8c5593d"
+                },
+                "isDefault": true,
+                "relationship": "001711f6-debb-4e3f-a418-b0cc18f92da7"
+              }
+            ]
+          }
+        ],
+        "lineageTag": "1fa15319-ceb1-47dc-9d12-d8d29f66b34e",
+        "partitions": [
+          {
+            "name": "Calendario",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "CALENDAR(",
+                "DATE(YEAR(MIN('usuario2 (2)'[Timestamp])), 8, 27),",
+                "DATE(YEAR(MAX('usuario2 (2)'[Timestamp])), 11, 9))"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_fcb7808a-4f8b-4cf0-a4cf-72f8e8c5593d",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "28cade3a-a1ca-4360-97a1-23c9d7c582f5",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "7b2eaf4d-39cd-4921-99eb-f0f378fe82a1",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "90442e3b-aa1f-4383-9bcc-09e9c36f786d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "9e41c407-b95c-49ca-b780-8b6fd0de97d6",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "7f0f2594-389e-4f4f-8ac2-622dce2d1f49",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "45e86d7e-ba76-49a3-88e1-9dae5a3526f7",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "d71be424-95a7-43ef-a1f4-80d77ea9e42c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "6214bdd4-4ed1-4c25-97bf-79694ac01b35",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "69ac7ec3-fec3-4645-8856-166a5ab4b333",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "8e6802a6-309d-483c-87b2-0d3579a103c1",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "8747cda1-729e-4bc9-8b22-2bb3c2e794bb",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "25b1859e-ce3c-4463-bc46-1ca9f7c7a9b6"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "59cc449f-6ba2-4a38-ad34-f486f1484a92",
+        "partitions": [
+          {
+            "name": "LocalDateTable_fcb7808a-4f8b-4cf0-a4cf-72f8e8c5593d",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Calendario'[Date])), 1, 1), Date(Year(MAX('Calendario'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "d22776fcfdfc42799903b8ee678b298a"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Parámetro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "a5803b14-6567-4633-b24c-b0f99b3f2a9e",
+            "relatedColumnDetails": {
+              "groupByColumns": [
+                {
+                  "groupingColumn": "Parámetro Campos"
+                }
+              ]
+            },
+            "sortByColumn": "Parámetro Orden",
+            "sourceColumn": "[Value1]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Parámetro Campos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "extendedProperties": [
+              {
+                "name": "ParameterMetadata",
+                "type": "json",
+                "value": {
+                  "kind": 2,
+                  "version": 3
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "edc687cc-fa67-4a06-bc3e-7d748bf490cc",
+            "sortByColumn": "Parámetro Orden",
+            "sourceColumn": "[Value2]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Parámetro Orden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "2d70b743-7a85-4c56-bf1f-42f98b74db59",
+            "sourceColumn": "[Value3]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "ae47ce2f-733b-421f-ad72-5ce0ec7a8c32",
+        "measures": [
+          {
+            "name": "EdadPromedio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "AVERAGE('usuario2 (2)'[Age]) ",
+            "lineageTag": "e535ae7c-1364-4d52-9d4a-866f34eb9b97"
+          },
+          {
+            "name": "HorasDeEscuchaMax",
+            "expression": "MAXX('usuario2 (2)', 'usuario2 (2)'[Hours per day])",
+            "formatString": "0",
+            "lineageTag": "005e4d9a-8307-4729-848d-8cfc316d5a21"
+          },
+          {
+            "name": "Diferencia_Depresion_Ansiedad",
+            "expression": [
+              "",
+              "VAR Diferencia = SUM(EstadoMental[Depression]) - SUM(EstadoMental[Anxiety])",
+              "RETURN",
+              "CONCATENATE(\"La diferencia promedio entre depresión y ansiedad es: \", FORMAT(Diferencia, \"0.00\"))"
+            ],
+            "lineageTag": "32972770-c34d-448f-96ce-f435eca2a712"
+          },
+          {
+            "name": "mMinimoHorasEscucha",
+            "lineageTag": "f9566b34-e4aa-4c07-98ec-b4c1441b0589"
+          },
+          {
+            "name": "ConteoUsuarios",
+            "expression": "COUNT('usuario2 (2)'[usuario_id(PK)])",
+            "formatString": "0",
+            "lineageTag": "63fcf8ab-687e-4ef6-92fd-6ccd86905af2"
+          },
+          {
+            "name": "minHorasPorEdad",
+            "expression": "CONCATENATE([EdadPromedio], [mMinimoHorasEscucha])",
+            "lineageTag": "7cc7c575-6e8c-4c4c-9be6-7f39f3ab437d"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "{",
+                "    (\"fav_genre\", NAMEOF('sesion3'[fav_genre]), 0),",
+                "    (\"music_effect\", NAMEOF('sesion3'[music_effect]), 1)",
+                "}"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

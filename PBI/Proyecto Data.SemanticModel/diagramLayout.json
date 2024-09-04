@@ -1,0 +1,124 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 513.518862978792,
+        "y": 183
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 502.51886297879196,
+            "y": 370.04391258134
+          },
+          "nodeIndex": "dataset1",
+          "nodeLineageTag": "5d3ccf74-638c-4c75-9743-fbb310964d88",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 594.518862978792,
+            "y": 0
+          },
+          "nodeIndex": "EstadoMental",
+          "nodeLineageTag": "8e324318-40b0-4360-8d44-39dc5b2e8722",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 209.98010133112254
+          },
+          "nodeIndex": "Frecuencia",
+          "nodeLineageTag": "511c3356-4559-4095-bff2-5ecdf0ace580",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 45,
+            "y": 0
+          },
+          "nodeIndex": "generoMusical",
+          "nodeLineageTag": "a3a8d2bd-6493-4731-9913-7101f357e615",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 98.42561406805055,
+            "y": 548.08782516268
+          },
+          "nodeIndex": "sesion3",
+          "nodeLineageTag": "8e8b2e35-7068-4f9e-8061-4fed530c711b",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 934.518862978792,
+            "y": 212
+          },
+          "nodeIndex": "usuario2 (2)",
+          "nodeLineageTag": "3b564272-5cb6-44ba-961a-44fda3260b62",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1197.518862978792,
+            "y": 262.04391258134
+          },
+          "nodeIndex": "Calendario",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 906,
+            "y": 519
+          },
+          "nodeIndex": "Medidas",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}
